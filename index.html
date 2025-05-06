@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .hasil {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <input type="number" id="angka1" placeholder="Angka pertama">
+    <input type="number" id="angka2" placeholder="Angka kedua">
+    <br>
+    <select id="operator">
+        <option value="+">Tambah (+)</option>
+        <option value="-">Kurang (-)</option>
+        <option value="*">Kali (*)</option>
+        <option value="/">Bagi (/)</option>
+    </select>
+    <button onclick="hitung()">Hitung</button>
+
+    <div class="hasil" id="hasil"></div>
+
+    <!-- Hubungkan file JavaScript eksternal -->
+    <script src="adri.js"></script>
+</body>
+
+</html>
